@@ -1,0 +1,267 @@
+* {
+  padding: 0;
+  margin: 0;
+  box-sizing: border-box;
+}
+
+body {
+  background-color: black;
+}
+
+header {
+  background-color: rgb(8, 7, 7);
+}
+header .contenedorblack .blackcontacto {
+  color: rgb(230, 230, 230);
+  font-size: 22px;
+  text-align: center;
+  padding: 10px;
+  border: 1px solid rgb(230, 230, 230);
+}
+header .contenedornombre {
+  background-color: rgb(8, 7, 7);
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+header .contenedornombre img {
+  width: 150px;
+  border-radius: 50%;
+  margin-bottom: 10px;
+  object-fit: cover;
+  background-color: rgb(8, 7, 7);
+}
+
+main {
+  background-color: rgb(8, 7, 7);
+}
+main .carousel img {
+  margin-top: 2px;
+  background-color: rgb(8, 7, 7);
+  height: 300px;
+  object-fit: cover;
+}
+main .noveperfumes p {
+  text-align: center;
+  font-size: 20px;
+  margin-top: 20px;
+  color: rgb(230, 230, 230);
+  font-family: sans-serif;
+}
+main .contenedorgrid .gridimg img {
+  display: grid;
+  grid-template-columns: repeat(1, 1fr);
+  padding: 10px;
+  width: 100%;
+  height: 250px;
+  border-radius: 40px;
+  object-fit: cover;
+  padding: 10px;
+}
+
+@media screen and (min-width: 768px) {
+  main .noveperfumes p {
+    font-size: 30px;
+  }
+  .contenedorgrid {
+    display: grid;
+    grid-template-columns: repeat(2, 2fr);
+    padding: 20px;
+  }
+  main .contenedorgrid .gridimg img {
+    height: 100%;
+  }
+}
+@media screen and (min-width: 1024px) {
+  main .noveperfumes p {
+    padding: 40px;
+    margin-bottom: 10px;
+  }
+  header .blackcontacto {
+    display: flex;
+    justify-content: left;
+  }
+  .contenedorgrid {
+    padding: 40px;
+  }
+}
+@media screen and (min-width: 1200px) {
+  main .noveperfumes p {
+    padding: 40px;
+    margin-bottom: 10px;
+    font-size: 40px;
+    font-family: serif;
+  }
+  .contenedorgrid {
+    display: grid;
+    grid-template-columns: repeat(3, 3fr);
+    padding: 10px;
+    gap: 10px;
+  }
+}
+footer {
+  background-color: rgb(8, 7, 7);
+  padding: 30px;
+}
+footer .bordesfo {
+  background-color: rgb(36, 36, 36);
+  text-align: center;
+  border-radius: 20px;
+}
+footer .redes a img {
+  font-size: 20px;
+  text-decoration: none;
+  width: 40px;
+  padding: 2px;
+}
+footer .redes {
+  text-align: center;
+  font-size: 30px;
+  color: rgb(230, 230, 230);
+}
+footer .nombre {
+  color: rgb(230, 230, 230);
+}
+
+main .contenedoryves {
+  display: grid;
+  grid-template-columns: repeat(1, 1fr);
+}
+main .contenedoryves .perfumesimg img {
+  width: 100%;
+  height: 500px;
+  border-radius: 60px;
+  padding: 20px;
+  object-fit: cover;
+}
+main .contenedoryves .contenedor-acordes {
+  padding: 15px;
+}
+main .contenedoryves .contenedordise {
+  padding: 10px;
+  box-shadow: 2px 2px 10px white;
+}
+main .contenedoryves .creador {
+  color: white;
+  font-size: 25px;
+  text-align: center;
+}
+
+.contenedor-acordes {
+  margin-bottom: 20px;
+}
+.contenedor-acordes .acorde p {
+  padding: 5px;
+  text-align: center;
+  color: white;
+}
+.contenedor-acordes .acorde {
+  padding: 2px;
+}
+.contenedor-acordes .acorde-dulce {
+  width: 100%;
+  background-color: rgb(139, 43, 43);
+  border-radius: 30px;
+  margin-top: 20px;
+}
+.contenedor-acordes .acorde-afrutado {
+  width: 95%;
+  background-color: rgb(209, 74, 153);
+  border-radius: 30px;
+}
+.contenedor-acordes .acorde-amaderado {
+  width: 85%;
+  background-color: rgb(211, 149, 68);
+  border-radius: 30px;
+}
+.contenedor-acordes .acorde-citrico {
+  width: 75%;
+  background-color: rgb(176, 204, 74);
+  border-radius: 30px;
+}
+.contenedor-acordes .acorde-verde {
+  width: 65%;
+  background-color: rgb(54, 207, 79);
+  border-radius: 30px;
+}
+.contenedor-acordes .acorde-caramelo {
+  width: 55%;
+  background-color: rgb(128, 83, 41);
+  border-radius: 30px;
+}
+
+.acorde {
+  padding: 2px;
+}
+
+@media screen and (min-width: 768px) {
+  main .contenedoryves {
+    grid-template-columns: repeat(3, 3fr);
+  }
+  .contenedor-acordes {
+    margin-top: 70px;
+  }
+  main .contenedoryves .perfumesimg img {
+    height: 400px;
+  }
+  main .contenedoryves .contenedordise {
+    box-shadow: 5px 10px 15px rgb(231, 231, 231);
+    writing-mode: vertical-lr;
+    margin-left: 100px;
+    width: 50%;
+    background-color: rgba(39, 38, 38, 0.57);
+    border-radius: 20px;
+    height: 90%;
+    transform: rotate(180deg);
+    display: flex;
+    justify-content: center;
+    align-items: center;
+  }
+  main .contenedordise .creador {
+    text-shadow: 2px 2px 10px white;
+    font-size: 40px;
+  }
+}
+@media screen and (min-width: 1024px) {
+  main .contenedoryves .perfumesimg img {
+    height: 600px;
+  }
+  .contenedor-acordes {
+    margin-top: 130px;
+  }
+  .contenedordise {
+    font-size: 87px;
+    box-shadow: 5px 10px 15px rgb(2, 2, 2);
+    writing-mode: vertical-lr;
+    margin-left: 100px;
+    width: 60%;
+    background-color: rgba(39, 38, 38, 0.57);
+    border-radius: 20px;
+    height: 90%;
+    transform: rotate(180deg);
+  }
+}
+@media screen and (min-width: 1200px) {
+  main .contenedoryves .perfumesimg img {
+    width: 100%;
+  }
+  main .contenedoryves .contenedordise {
+    writing-mode: vertical-lr;
+    margin-left: 100px;
+    width: 70%;
+  }
+  .contenedordise .creador {
+    display: flex;
+    align-items: center;
+    text-shadow: 2px 2px 10px white;
+    font-size: 40px;
+  }
+  .contenedornombre {
+    margin-top: 10px;
+  }
+  #nombregr {
+    width: 100px;
+  }
+}
+
+/*# sourceMappingURL=main.css.map */

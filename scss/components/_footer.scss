@@ -1,0 +1,23 @@
+footer{
+    background-color: $color-secundario;
+    padding: 30px;
+    .bordesfo{
+    background-color: rgb(36, 36, 36);
+    text-align: center;
+    border-radius: 20px; 
+    }
+    .redes a img{
+        font-size: 20px;
+        text-decoration: none;
+        width: 40px;  
+        padding: 2px;
+    }
+    .redes {
+        text-align: center;
+        font-size: 30px;
+        color: $color-principal;
+    }
+    .nombre{
+        color: $color-principal;
+    }
+}

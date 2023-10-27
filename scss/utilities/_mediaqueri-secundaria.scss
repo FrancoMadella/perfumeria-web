@@ -1,0 +1,74 @@
+@media screen and (min-width: 768px){
+    main .contenedoryves{
+       grid-template-columns: repeat(3, 3fr);
+    } 
+    .contenedor-acordes{
+        margin-top: 70px;
+    }
+    main .contenedoryves .perfumesimg img{
+        height: 400px;
+    }
+        
+    main .contenedoryves .contenedordise{
+            box-shadow: 5px 10px 15px rgb(231, 231, 231);
+            writing-mode: vertical-lr;
+            margin-left: 100px;
+            width: 50%;
+            background-color: rgba(39, 38, 38, 0.57);
+            border-radius: 20px;
+            height: 90%;
+            transform: rotate(180deg);
+            display: flex;
+            justify-content: center;
+            align-items: center;
+        }    
+       main  .contenedordise .creador{
+            text-shadow: 2px 2px 10px white;
+            font-size: 40px;
+        }
+    }
+
+@media screen and (min-width: 1024px){  
+    main .contenedoryves .perfumesimg img{
+        height: 600px;
+    }
+    .contenedor-acordes{
+        margin-top: 130px;
+    }  
+    .contenedordise {
+        font-size: 87px;
+        box-shadow: 5px 10px 15px rgb(2, 2, 2);
+        writing-mode: vertical-lr;
+        margin-left: 100px;
+        width: 60%;
+        background-color: rgba(39, 38, 38, 0.57);
+        border-radius: 20px;
+        height: 90%;
+        transform: rotate(180deg);
+    }
+}
+
+
+@media screen and (min-width: 1200px){
+    main .contenedoryves .perfumesimg img{
+        width: 100%;
+    }
+    main .contenedoryves .contenedordise {
+        writing-mode: vertical-lr;
+        margin-left: 100px;
+        width: 70%;
+    }
+     .contenedordise .creador{
+        display: flex;
+        align-items: center;
+        text-shadow: 2px 2px 10px white;
+        font-size: 40px;
+    }
+    .contenedornombre{
+        margin-top: 10px;
+    }
+    #nombregr{
+        width: 100px;
+    }
+
+}
